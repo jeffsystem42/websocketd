@@ -1,0 +1,23 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<h1> Lancement des batchs CREWTIME</h1>
+
+<div id="app">
+
+        <input type="radio" id="batch1" value="b1" v-model="batch">
+        <label for="one">Batch de lancement 1</label>
+        <br>
+        <input type="radio" id="batch2" value="b2" v-model="batch">
+        <label for="two">Batch de lancement 2</label>
+        <br><br>
+        <span>Batch à lancer : {{ batch }}</span>
+        <br>
+        <button @click="execute">Lancement du Batch</button>
+        <br>
+        <textarea cols='100' rows='10' v-model="message" placeholder="Retour de la commande">
+        </textarea>
+   
+  </div>
+
+  <script src="index.js"></script>
